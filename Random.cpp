@@ -43,7 +43,7 @@ uint64_t Random::fast_rand(uint64_t n) {
     //std::cout << "(((frac_decomp(n))) * C) % m = " << (((frac_decomp(n))) * C) % M << std::endl;
 
     //return ((a_n_mod_m * X_0) % M + ((((a_n_mod_m - 1) / (A - 1)) * C) % M)) % M;
-    return ((a_n_mod_m * X_0) % M + (frac_decomp(n) % M) * C) % M;+
+    return ((a_n_mod_m * X_0) % M + (frac_decomp(n) % M) * C) % M;
 }
 
 uint64_t Random::a_n_mod_m(uint64_t n) {

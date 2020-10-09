@@ -13,7 +13,7 @@ public:
     uint64_t rand(uint64_t n);
     uint64_t fast_rand(uint64_t n);
     //unsigned int a_n_mod_m(unsigned int n);
-    uint64_t frac_decomp(uint64_t n);
+    //uint64_t frac_decomp(uint64_t n);
 
 private:
     uint64_t X_0, A, C, M;
@@ -21,7 +21,7 @@ private:
     std::vector<uint64_t> el;
     uint64_t a_n_mod_m(uint64_t n);
     //decomposes (a^n - 1) / (a - 1) % m
-    //uint64_t frac_decomp(uint64_t n);
+    uint64_t frac_decomp(uint64_t n);
 };
 
 

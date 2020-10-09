@@ -11,13 +11,13 @@
 #define M (uint64_t)2282282323
 #define DELTA (uint64_t)1
 
-#define N (uint64_t)10000000000000000051
+#define N (uint64_t)pow(2, 63)
 
 int main() {
     Random seed(X_0, A, C, M);
-    std::chrono::time_point<std::chrono::steady_clock> start_time, stop_time;
+    //std::chrono::time_point<std::chrono::steady_clock> start_time, stop_time;
 
-    std::ofstream file("worktime.txt");
+    //std::ofstream file("worktime.txt");
 
     /*for (unsigned int i = 0; i < (N * DELTA); i += DELTA) {
         start_time = std::chrono::steady_clock::now();
@@ -36,7 +36,7 @@ int main() {
     }*/
 
     std::cout << seed.fast_rand(N) << std::endl;
-    std::cout << seed.rand(N) << std::endl;
+    //std::cout << seed.rand(N) << std::endl;
 
     return 0;
 }
